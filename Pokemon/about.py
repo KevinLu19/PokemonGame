@@ -7,7 +7,7 @@
 # Modification: N/A
 # ----------------------------------------------------------------------------------------
 
-from flask import render_template, url_for
+from flask import render_template
 
 from Pokemon import app
 

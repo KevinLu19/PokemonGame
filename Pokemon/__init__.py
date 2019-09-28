@@ -4,10 +4,10 @@
 # File: __init__.py
 # Purpose: Tells Python that this is part of the package. Useful for distributing code to others.
 # Modification: N/A
-#               - Taken from Flask documentation
+#               
 # ----------------------------------------------------------------------------------------
 
-from flask import Flask
+from flask import Flask, url_for
 
 import os
 
@@ -15,7 +15,7 @@ import os
 app = Flask(__name__)
 
 import Pokemon.about  # Linked via Setup.py
-import Pokemon.pokemonGame # Link pokemon Game file
+import Pokemon.pokemonGame # Link pokemon Game
 
 # def create_app(test_config=None):
 #     # create and configure the app

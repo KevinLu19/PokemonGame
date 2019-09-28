@@ -10,8 +10,10 @@
 from flask import render_template
 from Pokemon import app
 
+import random
+
 generateNumberForImage = random.randrange(492)
 
 @app.route('/pokemon')
 def pokemonGame():
-    return (render_template("pokemon.html"))
+    return (render_template("pokemon.html", title="Pokemon"))
