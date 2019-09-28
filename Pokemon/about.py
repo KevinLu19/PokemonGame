@@ -2,13 +2,15 @@
 # Author: Kevin Lu
 # Date: 7/10/2019
 # File: about.py
-# Purpose: Links about.html to the website.
+# Purpose: Links about.html to the website along with supplying the main file with the re-route
+#       of about page.
 # Modification: N/A
 # ----------------------------------------------------------------------------------------
 
-from flask import Flask, template_rendered
+from flask import render_template, url_for
 
+from Pokemon import app
 
 @app.route('/about')
 def about():
-    return (template_rendered("about.html", title="About"))
+    return (render_template("about.html", title="About Me"))

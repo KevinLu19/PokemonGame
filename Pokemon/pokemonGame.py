@@ -2,10 +2,16 @@
 # Author: Kevin Lu
 # Date: 7/10/2019
 # File: pokemonGame.py
-# Purpose: Re-creating the "Who's that pokemon" game that was originated from the 
-#           Pokemon anime.
-# Modification: - Implemented the ability to randomly generate a pokemon and screen it to html
-#               through using variables. 
-#               - Encapsulates the user's answers onto a class.
+# Purpose: Main file for handling the Pokemon Guessing aspect.
+# Modification: - Re-done the entire project. Moved LOTS of things around.
+#               - Separating project so it is well organized and structured.
 # ----------------------------------------------------------------------------------------
 
+from flask import render_template
+from Pokemon import app
+
+generateNumberForImage = random.randrange(492)
+
+@app.route('/pokemon')
+def pokemonGame():
+    return (render_template("pokemon.html"))
