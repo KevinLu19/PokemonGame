@@ -90,3 +90,61 @@ a.article-title:hover {
   background-color: transparent;
   text-align: center;
 }
+
+/* Image Containter for Pokemon */
+.fixed-rectangle
+{
+  width: 50%;
+  
+  /* Makes the corners round. */
+  min-height: 200px;
+  border-radius: 10px;
+
+  background-color: gray;
+  position: relative;
+
+  left: 25%;
+
+  /* background-color: gray;
+  min-height: 200px;
+  padding: 30px;
+  border-radius: 10px; */
+}
+
+/* This makes it responsive. */
+.fixed-rectangle:before
+{
+  content: "";
+  display: block;
+  padding-top: 12%;
+}
+
+.fixed-rectangle:after 
+{
+  content: "";
+  display: block;
+  padding-bottom: 40%;
+}
+
+.fixed-rectangle .pokemonImage
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 30px; */
+}
+
+/* Image itself. */
+.imageContent
+{ 
+  max-width: 100%;
+  height: auto;
+}
+
+/* @media screen and (max-width: 1700px)
+{
+  .imageContent
+  {
+    width: 100px;
+  }
+} */
