@@ -91,11 +91,12 @@ a.article-title:hover {
   text-align: center;
 }
 
-/* Image Containter for Pokemon */
+/* -- Image Containter for Pokemon -- */
 .fixed-rectangle
 {
-  width: 50%;
-  
+  width: 40%;
+  height: 500px;
+
   /* Makes the corners round. */
   min-height: 200px;
   border-radius: 10px;
@@ -103,12 +104,7 @@ a.article-title:hover {
   background-color: gray;
   position: relative;
 
-  left: 25%;
-
-  /* background-color: gray;
-  min-height: 200px;
-  padding: 30px;
-  border-radius: 10px; */
+  left: 30%;
 }
 
 /* This makes it responsive. */
@@ -126,6 +122,7 @@ a.article-title:hover {
   padding-bottom: 40%;
 }
 
+/* Centers image within the div box. */
 .fixed-rectangle .pokemonImage
 {
   display: block;
@@ -141,10 +138,6 @@ a.article-title:hover {
   height: auto;
 }
 
-/* @media screen and (max-width: 1700px)
-{
-  .imageContent
-  {
-    width: 100px;
-  }
-} */
+/* -- Skip Button -- */
+
+/* -- Submit Answer Button -- */

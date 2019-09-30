@@ -10,13 +10,19 @@
 
 {% block h1Text %}
     Pokemon Game
-{% endblock %}
+{% endblock h1Text %}
 
 {% block imageContainer %}
   <div class="fixed-rectangle">
     <div class="imageContent">
-      <img src="static/sprites/39.png" class="pokemonImage" alt="">
+      <img src="static/sprites/{{ imageNumber }}" class="pokemonImage" alt="">
     </div>
   </div>
-{% endblock %}
+{% endblock imageContainer %}
 
+
+{% block skipMe %}
+    <div class="nextPokemon">
+        <button type="button" class="btn btn-primary">Skip Pokemon</button>
+    </div>
+{% endblock skipMe%}

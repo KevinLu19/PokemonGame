@@ -60,12 +60,18 @@
       </nav>
     </header>
 
-
-    {% block contentContainer%}
-    {% endblock %}
+    <!-- Skip Button -->
+    {% block skipMe%} {% endblock %}
 
     <!-- Create a box for image to be displayed -->
     {% block imageContainer %}
+    {% endblock %}
+
+    {% block submitAnswer%}
+    {% endblock %}
+
+    <!-- For About Me.-->
+    {% block contentContainer%}
     {% endblock %}
 
     <!-- Optional JavaScript -->

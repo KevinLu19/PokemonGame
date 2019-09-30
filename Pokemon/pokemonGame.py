@@ -7,13 +7,15 @@
 #               - Separating project so it is well organized and structured.
 # ----------------------------------------------------------------------------------------
 
-from flask import render_template
+from flask import render_template, request
 from Pokemon import app
 
 import random
 
 generateNumberForImage = random.randrange(492)
 
-@app.route('/pokemon')
-def pokemonGame():
-    return (render_template("pokemon.html", title="Pokemon"))
+@app.route('/pokemon', methods=("GET", "POST"))
+def renderPokemonImage():
+    return (render_template("pokemon.html", title="Pokemon", imageNumber=str(generateNumberForImage) + ".png"))
+
+
