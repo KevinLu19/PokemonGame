@@ -14,6 +14,7 @@ import random
 
 generateNumberForImage = random.randrange(492)
 
+@app.route('/', methods=("GET", "POST"))
 @app.route('/pokemon', methods=("GET", "POST"))
 def renderPokemonImage():
     return (render_template("pokemon.html", title="Pokemon", imageNumber=str(generateNumberForImage) + ".png"))

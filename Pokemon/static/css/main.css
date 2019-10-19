@@ -136,8 +136,15 @@ a.article-title:hover {
 { 
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
 /* -- Skip Button -- */
-
+.form-group
+{
+  width: 25%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* -- Submit Answer Button -- */
