@@ -16,3 +16,4 @@ app = Flask(__name__)
 import Pokemon.about        # Linked via Setup.py
 import Pokemon.pokemonGame  # Link pokemon Game
 import Pokemon.skip         # Linking button
+import Pokemon.pokemonNames # Linking pokemonDictionary
