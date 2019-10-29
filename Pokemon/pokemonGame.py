@@ -11,6 +11,7 @@ from flask import render_template, request
 from Pokemon import app
 
 import random
+from Pokemon import pokemonName
 
 generateNumberForImage = random.randrange(492)
 
@@ -18,3 +19,9 @@ generateNumberForImage = random.randrange(492)
 @app.route('/pokemon', methods=("GET", "POST"))
 def renderPokemonImage():
     return (render_template("pokemon.html", title="Pokemon", imageNumber=str(generateNumberForImage) + ".png"))
+
+# Checking answers taken from users.
+@app.route('/pokemon', methods=("GET", "POST"))
+def checkPokemonName(name):
+    userAnswer = request.form["pokeName"]
+    pass

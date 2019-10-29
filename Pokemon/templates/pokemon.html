@@ -29,7 +29,8 @@
 
 {% block submitAnswer %}
     <div class="form-group">
-      <label for="pokemonName">Enter Pokemon Name</label>
-      <input type="text" class="form-control" id="pokemonName">
+      <form class="form" method="POST">
+        <input type="text" class="form-control" id="pokemonName" name="pokeName" placeholder="Enter Pokemon Name">
+      </form>
     </div>
 {% endblock submitAnswer%}

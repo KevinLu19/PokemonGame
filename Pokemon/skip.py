@@ -13,4 +13,7 @@ from Pokemon import app
 @app.route('/')
 @app.route('/pokemon')
 def skip():
+    # Boolean variable.
+    skipCurrentImage = False
+    
     return (render_template("skip.html", title="Pokemon"))
