@@ -11,11 +11,7 @@ from flask import render_template, request
 from Pokemon import app
 
 import random
-<<<<<<< HEAD
 from Pokemon import pokemonName
-=======
-import PokemonGame.pokemonName
->>>>>>> a08be33cfc49cdf108c509177ac73eba5208d731
 
 generateNumberForImage = random.randrange(492)
 
@@ -24,14 +20,8 @@ generateNumberForImage = random.randrange(492)
 def renderPokemonImage():
     return (render_template("pokemon.html", title="Pokemon", imageNumber=str(generateNumberForImage) + ".png"))
 
-<<<<<<< HEAD
 # Checking answers taken from users.
 @app.route('/pokemon', methods=("GET", "POST"))
 def checkPokemonName(name):
     userAnswer = request.form["pokeName"]
-=======
-
-# Checking answers taken from users.
-def checkPokemonName(name):
->>>>>>> a08be33cfc49cdf108c509177ac73eba5208d731
     pass
