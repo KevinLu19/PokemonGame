@@ -45,15 +45,21 @@ Mac/ Linux:
 Windows: 
   py -m pip install --user virtualenv
   
-In order to activate virtual environemnt, type into terminal: 
+```
 
+Creating Python Virtual Environment:
+```
+Mac/ Linux:
+   python3 -m venv env
+
+Windows: 
+   py -m venv env
+
+In order to activate virtual environemnt, type into terminal: 
 source/bin/activate
 ```
-
-```
-Install Gmail API:
-Ctrl + shift + P to open Command Palette. Enter NuGet Package Manager and enter in "Google.Apis.Gmail.v1"
-```
+   Note: If want to install libraries within virtual environment, we can do a pip install within the virutal environment. 
+   Ex: (After activating virutal environment) pip3 install numpy
 
 ## Running the tests
 
