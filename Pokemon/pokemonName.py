@@ -159,5 +159,5 @@ pokemonNames = {
     "Dragonair" : "148.png",
     "Dragonite" : "149.png",
     "Mewtwo"    : "150.png",
-    "mew"       : "151.png" 
+    "Mew"       : "151.png" 
 }

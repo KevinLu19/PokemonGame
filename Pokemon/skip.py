@@ -6,9 +6,10 @@
 # Modification: N/A
 # ----------------------------------------------------------------------------------------
 
-from flask import render_template
+from flask import render_template, request
 
 from Pokemon import app
+from Pokemon import pokemonGame as pg
 
 @app.route('/')
 @app.route('/pokemon')
@@ -16,4 +17,8 @@ def skip():
     # Boolean variable.
     skipCurrentImage = False
     
-    return (render_template("skip.html", title="Pokemon"))
+    if (request.method == "POST"):
+        skipCurrentImage = True
+
+        if (skipCurrentImage == True):
+            return (render_template("pokemon.html", title="Pokemon", imageNumber = str(pg.generateNumberForImage) + ".png"))

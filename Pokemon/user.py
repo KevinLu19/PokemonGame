@@ -21,4 +21,6 @@ class User:
         return self.userAnswer
     
     def incrementScore (self):
-        return self.userScore += 1
+        self.userScore = self.userScore + 1
+
+        return self.userScore
