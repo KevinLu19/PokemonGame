@@ -61,6 +61,9 @@ source/bin/activate
    Note: If want to install libraries within virtual environment, we can do a pip install within the virutal environment. 
    Ex: (After activating virutal environment) pip3 install numpy
 
+## Purpose
+The main reason for this project is to put the knowledge of Flask into use by making a Pokemon guessing game. 
+
 ## Running the tests
 
 In order to run, type into terminal: python3 app.py.
