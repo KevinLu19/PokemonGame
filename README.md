@@ -72,7 +72,7 @@ In order to run, type into terminal: python3 app.py.
 
 * [Flask](http://flask.palletsprojects.com/en/1.1.x/) - Main framwork used.
 * [National PokeDex](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number) - Seek out the National PokeDex.
-
+* [BootStrap4](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - BootStrap4
 Languages: 
 * Python 3
 * HTML/ CSS
