@@ -1,10 +1,3 @@
-<!--
-  Author: Kevin Lu
-  Date: September 27th, 2019
-  File: pokemon.html
-  Purpose: Main Html file for handling pokemon Game
-  Modification: N/A
--->
 
 {% extends "index.html" %}
 
@@ -21,9 +14,9 @@
 {% endblock imageContainer %}
 
 {% block skipMe %}
-    <div class="nextPokemon">   
-        <button type="submit" class="btn btn-primary">Skip Pokemon</button>
-    </div>
+  <div class="nextPokemon">
+    <button onClick="{{ skip }}" type="button" class="btn btn-primary">Skip</button>
+  </div>
 {% endblock skipMe%}
 
 {% block submitAnswer %}
