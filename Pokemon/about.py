@@ -4,4 +4,4 @@ from Pokemon import app
 
 @app.route('/about')
 def about():
-    return (render_template("about.html", title="About Me"))
+    return (render_template("about.html"))

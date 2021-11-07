@@ -6,3 +6,5 @@ __pycache__
 continue later.py 
 
 .vscode
+
+secret_key.py

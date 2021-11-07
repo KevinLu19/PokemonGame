@@ -1,28 +1,23 @@
 
 {% extends "index.html" %}
 
-{% block h1Text %}
-    Pokemon Game
-{% endblock h1Text %}
 
 {% block imageContainer %}
-  <div class="fixed-rectangle">
-    <div class="imageContent">
-      <img src="static/sprites/{{ imageNumber }}" class="pokemonImage" alt="">
+  <div id="fixed-rectangle">
+    <div id="imageContent">
+      <img src="static/sprites/{{ image_number }}" id="pokemonImage" alt="">
     </div>
+
+    <div id="game-submit-div">
+      <form method="POST" class="game-submit-form" autocomplete="off">
+        <input type="text" id="game-submit-input" name="pokemon_name" placeholder="Enter Pokemon Name" />
+      </form>
+    </div>
+
+    <form method="POST">
+      <button type="submit" class="btn btn-primary" value="skip_button" id="skip_pokemon">I Have No Clue</button>
+    </form>
+
   </div>
 {% endblock imageContainer %}
 
-{% block skipMe %}
-  <div class="nextPokemon">
-    <button onClick="{{ skip }}" type="button" class="btn btn-primary">Skip</button>
-  </div>
-{% endblock skipMe%}
-
-{% block submitAnswer %}
-    <div class="form-group">
-      <form class="form" method="POST">
-        <input type="text" class="form-control" id="pokemonName" name="pokeName" placeholder="Enter Pokemon Name">
-      </form>
-    </div>
-{% endblock submitAnswer%}

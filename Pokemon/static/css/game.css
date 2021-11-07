@@ -1,0 +1,115 @@
+/* ---- Main contianer for project. ---- */
+/* -- Image Containter for Pokemon -- */
+#fixed-rectangle
+{
+  width: 40%;
+  height: 600px;
+  bottom: 50px;
+
+  margin-top: 8%;
+
+  /* Makes the corners round. */
+  min-height: 200px;
+  border-radius: 10px;
+
+  background-color: gray;
+  position: relative;
+
+  align-items: center;
+
+  left: 30%;
+}
+
+/* This makes it responsive. */
+#fixed-rectangle:before
+{
+  content: "";
+  display: block;
+  padding-top: 12%;
+}
+
+#fixed-rectangle:after 
+{
+  content: "";
+  display: block;
+  padding-bottom: 40%;
+}
+
+/* Centers image within the div box. */
+#pokemonImage
+{
+  /* display: block; */
+  position: absolute;
+
+  margin-left: 100%;
+}
+
+/* Image itself. */
+#imageContent
+{ 
+  position: absolute;
+  margin-left: 30%;
+}
+
+/* -- Skip Button -- */
+#skip_pokemon
+{
+  display: inline;
+
+  width: 30%;
+  position: absolute;
+  margin-bottom: 100%;
+  margin-left: 35%;
+  margin-top: 15px;
+
+  background-color: transparent;
+  border: none;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  border-radius:10px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* -- Submit Answer Button -- */
+input[type=text]
+{
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(10, 12, 104, 0.288);
+}
+
+.border-removed-input 
+{
+  border: 0;
+}
+
+#game-submit-form
+{
+  position: absolute;
+  left: 100px;
+  bottom: 100;
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+#game-submit-input
+{
+  width: 70%;
+  border-radius:10px;
+  padding: 10px;
+
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
+
+  margin-left: 88px;
+  margin-right: 50px;
+  margin-top: 65%;
+}
