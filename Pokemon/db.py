@@ -1,8 +1,8 @@
 from os import error
 
 import sqlite3
-from sqlite3.dbapi2 import Cursor
 import names
+import database_location
 
 def link_connection(db_file):
     conn = False
@@ -30,13 +30,9 @@ def insert_to_pokemon_table(conn):
     for item in pokemon_dict:
         pokemon_value =  pokemon_dict[item]
 
-        # print (pokemon_value, pokemon_key)
-        #print (pokemon_value)
-
         cur.execute("""INSERT INTO pokemon VALUES (?, ?, ?)""", (None, pokemon_value, item))
     
     conn.commit()
-
 
 
 def pokemon_image_number():
@@ -54,13 +50,9 @@ def dictionary_pokemon_names():
         return key
 
 def main():
-    path = "C:\\users\\kevin\\desktop\\pokemongame\\pokemon\\pokemon.db" 
+    path = database_location.DATABASE_PATH_LOCATION
 
-    create_table_command = """CREATE TABLE IF NOT EXISTS pokemon (
-                                    id integer PRIMARY KEY AUTOINCREMENT,
-                                    image_num TEXT NOT NULL,
-                                    name TEXT NOT NULL
-    );"""
+    create_table_command = database_location.sql_create_table_command
 
     conn = link_connection(path)
 
