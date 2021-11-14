@@ -1,8 +1,8 @@
 from os import error
 
 import sqlite3
-import names
-import database_location
+from . import names
+from . import database_location
 
 def link_connection(db_file):
     conn = False

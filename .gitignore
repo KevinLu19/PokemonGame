@@ -8,3 +8,9 @@ continue later.py
 .vscode
 
 secret_key.py
+schema.sql
+
+pokemon.db
+db.py
+pokemon/db.py
+database_location.py

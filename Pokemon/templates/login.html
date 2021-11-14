@@ -1,6 +1,7 @@
 {% extends "index.html" %}
 
-<form method="POST">
+{% block login %}
+<!-- <form method="POST">
     <h3 align="center">Login</h3>
     <div class="form-group">
       <label for="email">Email Address</label>
@@ -24,4 +25,21 @@
     </div>
     <br />
     <button type="submit" class="btn btn-primary">Login</button>
-</form>
+</form> -->
+
+<h1>Login</h1>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+  <form method=post>
+    <dl>
+      <dt>Username:
+      <dd><input type=text name=username value="{{
+          request.form.username }}">
+      <dt>Password:
+      <dd><input type=password name=password>
+    </dl>
+    <p><input type=submit value=Login>
+  </form>
+
+{% endblock login %}

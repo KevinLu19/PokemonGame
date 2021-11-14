@@ -8,11 +8,15 @@
       <img src="static/sprites/{{ image_number }}" id="pokemonImage" alt="">
     </div>
 
-    <div id="game-submit-div">
+    <!-- <div id="game-submit-div">
       <form method="POST" class="game-submit-form" autocomplete="off">
         <input type="text" id="game-submit-input" name="pokemon_name" placeholder="Enter Pokemon Name" />
       </form>
-    </div>
+    </div> -->
+
+    <form method="POST" class="game-submit-form" autocomplete="off">
+      <input type="text" id="game-submit-input" name="pokemon_name" placeholder="Enter Pokemon Name" />
+    </form>
 
     <form method="POST">
       <button type="submit" class="btn btn-primary" value="skip_button" id="skip_pokemon">I Have No Clue</button>
