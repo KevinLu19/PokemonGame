@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, flash, url_for
+from flask import Blueprint, render_template, request, url_for
 
 import random
 
@@ -25,24 +25,17 @@ def skip():
 
 @views.route("/" , methods=["GET", "POST"])
 def check_pokemon():
-    # if (request.method == "POST"):
-    #     userAnswer = request.form["pokeName"]
-        
-    #     if (name.poke_names[userAnswer] == GENERATE_POKEMON_IMAGE_NUMBER):
-    #         newUser.incrementScore()
-    #         flash(userAnswer)
-    #         return (render_template("pokemon.html", title="Pokemon", imageNumber=str(GENERATE_POKEMON_IMAGE_NUMBER) + ".png"))
-    # else:
-    #     flash("Please Enter Pokemon Name")
-
     if request.method == "POST":
         user_guess = request.form["pokemon_name"]
 
-        flash("Your guess is: ", user_guess)
+        return render_template("login.html")
+    else:
+        return render_template("about.html")
 
-        return redirect(url_for("views.about"))
-    
-    return render_template("about.html")
+# Debugging Purposes
+@views.route("/<usr>")
+def user(usr):
+    return f"<h1>{usr}</h1>"
 
 @views.route("/about")
 def about():
@@ -57,6 +50,5 @@ def login():
                 request.form['password'] != 'secret':
             error = 'Invalid credentials'
         else:
-            flash('You were successfully logged in')
             return redirect(url_for('views.about'))
     return render_template('login.html', error=error)
