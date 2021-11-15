@@ -1,32 +1,25 @@
+## Purpose
+Inspired by the kids TV series Pokemon where there would be a random silhouette Pokemon that is used as a transition to the next scene of the TV series.
+
+The main reason for this project is to put the knowledge of Flask into use by making a Pokemon guessing game. 
+
 # Welcome To My Version of Who's That Pokemon
 This is a standalone game taken from the Pokemon animated series "Who's That Pokemon" that was popular during our youth days.
 
 NOTE: This guessing game will only have Pokemon from generation 1 - 3. Any Pokemon after that would not be here.
 
-## How to play (WIP not near completion at all)
-The game is currently being hosted on PythonAnyWhere. Link to the game: http://rumii7.pythonanywhere.com/
-
-Very simple actually, there will be a random silhouette picture of a pokemon and the player's goal is to guess the name of the pokemon. Each correctly guessed Pokemon would reward player a point on the score board. Any incorrect guess would simply skip the current image pokemon.
-
-## Work Priority 
-* Focusing on deploying the game without silhouette. Along with working score board.
-* Porting all platforms. 
-* Add other generations to the game. Currently the system only have 1st generation Pokemon.
-
-
-### Prerequisites
-```
-Programming Language: Python 3+ (Rest In Peace Python 2)
-Framework Required: Flask 
-
-API Used: Google API (Still deciding if want to continue to use Gmail api for notification)     
-         
-Works on Visual studio or Visual Studio Code. I will be using Visual Studio Code
-```
+## How to play (WIP)
+When given a picture of the Pokemon, the goal is to enter in the Pokemon's correct name.
 
 ### Installing
 
-I recommend installing and running code in a Python Virtual Environment which instills different version of Pythons. 
+The fastest way to install is installing through requirement.txt
+
+```
+pip install -r /path/to/requirements.txt
+```
+
+Either cloning the directory or completely download it.
 
 ```
 If using Git: 
@@ -36,34 +29,6 @@ Or download repository code.
 
 ```
 
-Install Python Virutal Environment: 
-
-```
-Mac/ Linux: 
-  python3 -m pip install --user virtualenv
-  
-Windows: 
-  py -m pip install --user virtualenv
-  
-```
-
-Creating Python Virtual Environment:
-```
-Mac/ Linux:
-   python3 -m venv env
-
-Windows: 
-   py -m venv env
-
-In order to activate virtual environemnt, type into terminal: 
-source/bin/activate
-```
-   Note: If want to install libraries within virtual environment, we can do a pip install within the virutal environment. 
-   Ex: (After activating virutal environment) pip3 install numpy
-
-## Purpose
-The main reason for this project is to put the knowledge of Flask into use by making a Pokemon guessing game. 
-
 ## Running the tests
 
 In order to run, type into terminal: python3 app.py.
@@ -71,9 +36,10 @@ In order to run, type into terminal: python3 app.py.
 ## Built With
 
 * [Flask](http://flask.palletsprojects.com/en/1.1.x/) - Main framwork used.
+* [SQLite3](https://docs.python.org/3/library/sqlite3.html) - Main Portable Database.
 * [National PokeDex](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number) - Seek out the National PokeDex.
 * [BootStrap4](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - BootStrap4
 Languages: 
-* Python 3
+* [Python 3](https://www.python.org/)
 * HTML/ CSS
 * Javascript
